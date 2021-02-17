@@ -31,7 +31,7 @@ sure how to make it true.
 arr = {}
 def has_dupes arr 
 arr = [1, 2, 3, 3, 4, 5, 5, 6]  
-if arr.uniq.length == arr.length
+if arr.uniq.length != arr.length
     return 'theres some dupes'
 else return 'there no dupes' 
 end
@@ -70,7 +70,7 @@ puts multiply_array(ary)# => 24
 
 # def NthFibonacci_Number
 # fibs = [1,1]
-# num = prompt "which fibonacci number do you want"?
+# num = prompt "which fibonacci number do you want?"
 #     while fibs.length < parseInt(num)
 #         length = fibs.length
 #         nextFib = fibs[length - 2] + fibs[length - 1]
