@@ -23,21 +23,21 @@ even_nums = [0, 2, 4, 6]
 odd_nums = [1, 5, 7, 9]
 mixed_nums = [0, 2, 4, 7]
 
-# def some_odd(numbers)
-#    numbers.any? { |number| number.odd?}
-# end
+def some_odd(numbers)
+   numbers.any? { |number| number.odd?}
+end
 
 # puts some_odd(odd_nums) # => true
 
-# def every_even(numbers)
-#     numbers.any? { |number| number.even?}
-#   end
+def every_even(numbers)
+    numbers.any? { |number| number.even?}
+  end
 #   puts every_even(even_nums) # => true
 
 
-#   def sum_evens(numbers)
-#     numbers.reduce(:+)
-#   end
+  def sum_evens(numbers)
+    numbers.reduce(:+)
+  end
 #   puts sum_evens(even_nums) # => 12
 
 # STUDENTS ARRAY
@@ -58,11 +58,22 @@ students = [
 def is_male(students)
  students.find_all { |student| student[:gender] == 'M'}
 end
-puts is_male(students)
+# puts is_male(students)  # => array of male students
 
 # FEMALE GENDER
-def is_male(students)
+def is_female(students)
     students.find_all { |student| student[:gender] == 'F'}
    end
-   puts is_male(students)
+#    puts is_female(students) # => array of female students
+
+# attempt at the filter
+# def filter_gender(students)
+#    if students.find_all { |student| student[:gender] == 'M'}
+#    return is_male
+# elsif students.find_all { |student| student[:gender] == 'F'}
+# return is_female
+# end
+# puts filter_gender(is_male)
+
+# FILTER GENDER
 
