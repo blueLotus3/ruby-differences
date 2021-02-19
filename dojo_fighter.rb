@@ -35,7 +35,7 @@ def power_move
     puts "Hadoken"
 end
 
-def attack(life)
+def attack(damage)
     @strength = strength
      damage =  @strength -= @life
         end
@@ -48,6 +48,11 @@ end
 class Ryu < Fighter
 
 end
+
+class Player < Fighter
+
+end
+
     class Dojo
         def self.lift_weights(fighter)
             fighter.strength += 1
@@ -86,13 +91,28 @@ ryu = Fighter.new("ryu",10,10,10,10)
 # ryu.show_luck
 # ryu.show_strength
 
+ryu.show_life
+ryu.attack(akuma)
+akuma.show_life
+
 # ryu.show_life
 # ryu.attack
 # akuma.show_life
-ryu.show_strength
-Dojo.lift_weights(ryu)
-ryu.strength
+# ryu.show_strength
+# Dojo.lift_weights(ryu)
+# ryu.strength
 
+
+# Create character
+player = Fighter.new("ken",20,20,20,20)
+def greeting 
+    puts "welcome to dojofighter, whats your name?"
+end
+
+
+ken.show_defense
+
+greeting
 
 
 
